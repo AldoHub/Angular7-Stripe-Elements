@@ -1,0 +1,6 @@
+<form class="paymentForm" (ngSubmit)="buy(paymentForm.value)" [formGroup]="paymentForm">
+  <input type="text" formControlName="name" placeholder="Jane Doe" />
+  <input type="email" formControlName="email" placeholder="Email" />
+  <ngx-stripe-card  [options]="cardOptions" [elementsOptions]="elementsOptions" ></ngx-stripe-card>
+  <input type="submit" value="Take My Money" />
+</form>

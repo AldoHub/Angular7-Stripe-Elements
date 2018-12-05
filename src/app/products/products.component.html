@@ -1,0 +1,11 @@
+<div class="items"> 
+  <div class="item" *ngFor="let item of products">
+    <h3>{{item.name}} </h3>
+    <p>{{item.description}}</p>
+    <div class="payment">  
+      <app-payment-form price= "{{item.amount}}" product="{{item.name}}" description="{{item.description}}" ></app-payment-form>
+      <img src="{{item.image}}" />
+    </div>
+  </div>  
+
+</div>
